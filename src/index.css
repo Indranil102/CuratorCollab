@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body bg-surface text-on-surface;
+    font-family: 'Manrope', sans-serif;
+  }
+}
+
+@layer utilities {
+  .newsreader {
+    font-family: 'Newsreader', serif;
+  }
+  .manrope {
+    font-family: 'Manrope', sans-serif;
+  }
+  .tonal-transition-bg {
+    background: linear-gradient(180deg, rgba(255,251,255,0.8) 0%, rgba(247,243,237,0.8) 100%);
+  }
+  .tonal-transition-from-surface {
+    background: linear-gradient(180deg, #fffbff 0%, #fdf9f4 100%);
+  }
+}
